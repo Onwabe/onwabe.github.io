@@ -2,40 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Java Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name], a Java Developer.</p>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your projects here -->
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <!-- Add resume download or embedded resume here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+   <section class="main">
+       <header>
+        <img src="myLogo.png" class="logo">
+           <!-- <a href="#" class="logo">Onwabe</a> -->
+           <div class="toggleMenu" onclick="menuToggle();"></div>
+ 
+           <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Work</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+           <a id="contactMe" href="#">Download CV</a>
+       </header>
+       <div class="content">
+        <h1>Hello!</h1>
+           <h1>I'm Onwabe Sisusa</h1>
+           <h2>Java Developer</h2>
+           <p>I am an ambitious individual who has developed a mature  and resposnible approach to every task
+            that I am faced with. 
+           </p>
+           <a href="#">Contact Me</a>
+       </div>
+       <div class="custom-shape-divider-bottom-1619063140">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- <img src="girl.png" class="model"> -->
+   </section>
+   <script>
+       function menuToggle(){
+           const toggleMenu = document.querySelector('.toggleMenu');
+           const menu = document.querySelector('.menu');
+           toggleMenu.classList.toggle('active')
+           menu.classList.toggle('active')
+       }
+   </script>
 </body>
 </html>
